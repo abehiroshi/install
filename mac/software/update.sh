@@ -62,6 +62,7 @@ curl
 git
 tig
 jq
+q
 ag
 lv
 parallel
