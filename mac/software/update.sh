@@ -4,7 +4,8 @@
 if ! which brew > /dev/null; then
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
-HOMEBREW_INSTALL_CLEANUP=1 brew upgrade
+export HOMEBREW_INSTALL_CLEANUP=1
+brew upgrade
 
 # zsh
 brew install zsh zsh-completions
@@ -48,7 +49,7 @@ fi
 
 # Vim
 brew install lua
-brew install vim --with-lua --with-override-system-vi
+brew install vim
 
 # Ricty
 brew tap sanemat/font
@@ -70,7 +71,7 @@ pandoc
 peco
 sift
 wget
-wdiff --with-gettext
+wdiff
 xmlstarlet
 tmux
 tree
@@ -117,13 +118,8 @@ brew cask upgrade ${cask_apps[@]}
 
 ## Install from App Store
 brew install mas
-# Snap
-mas install 418073146
-# Microsoft Remote Desktop
-mas install 1295203466
-# Display Menu
-mas install 549083868
-# Table Tool
-mas install 1122008420
-
+mas install 418073146 # Snap
+mas install 1295203466 # Microsoft Remote Desktop
+mas install 549083868 # Display Menu
+mas install 1122008420 # Table Tool
 mas upgrade
