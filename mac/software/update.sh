@@ -116,7 +116,7 @@ brew cask install ${cask_apps[@]}
 brew cask upgrade ${cask_apps[@]}
 
 ## Install from App Store
-
+brew install mas
 # Snap
 mas install 418073146
 # Microsoft Remote Desktop
