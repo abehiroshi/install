@@ -112,6 +112,7 @@ docker
 visual-studio-code
 android-studio
 thunderbird
+microsoft-office
 )
 brew tap caskroom/cask
 brew cask install ${cask_apps[@]}
