@@ -86,6 +86,7 @@ visual-studio-code
 android-studio
 thunderbird
 microsoft-office
+ssh-tunnel-manager
 )
 brew tap caskroom/cask
 brew cask install ${cask_apps[@]}
