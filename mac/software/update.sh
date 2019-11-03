@@ -79,7 +79,7 @@ typora
 inkdrop
 drawio
 postman
-app-cleaner
+appcleaner
 diskwave
 docker
 visual-studio-code
@@ -87,6 +87,8 @@ android-studio
 thunderbird
 microsoft-office
 ssh-tunnel-manager
+oracle-jdk
+nvm
 )
 brew tap caskroom/cask
 brew cask install ${cask_apps[@]}
