@@ -19,33 +19,6 @@ fi
 # GNU
 brew install xz
 brew install binutils coreutils findutils ed gawk gnu-sed gnu-tar grep gzip
-if ! grep /binutils/ ~/.zshrc > /dev/null; then
-  echo 'export PATH=$(brew --prefix binutils)/bin:$PATH' >> ~/.zshrc
-fi
-if ! grep /coreutils/ ~/.zshrc > /dev/null; then
-  echo 'export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH' >> ~/.zshrc
-  echo 'export MANPATH=$(brew --prefix coreutils)/libexec/gnuman:$MANPATH' >> ~/.zshrc
-fi
-if ! grep /findutils/ ~/.zshrc > /dev/null; then
-  echo 'export PATH=$(brew --prefix findutils)/libexec/gnubin:$PATH' >> ~/.zshrc
-  echo 'export MANPATH=$(brew --prefix findutils)/libexec/gnuman:$MANPATH' >> ~/.zshrc
-fi
-if ! grep /ed/ ~/.zshrc > /dev/null; then
-  echo 'export PATH=$(brew --prefix ed)/libexec/gnubin:$PATH' >> ~/.zshrc
-  echo 'export MANPATH=$(brew --prefix ed)/libexec/gnuman:$MANPATH' >> ~/.zshrc
-fi
-if ! grep /sed/ ~/.zshrc > /dev/null; then
-  echo 'export PATH=$(brew --prefix gnu-sed)/libexec/gnubin:$PATH' >> ~/.zshrc
-  echo 'export MANPATH=$(brew --prefix gnu-sed)/libexec/gnuman:$MANPATH' >> ~/.zshrc
-fi
-if ! grep /tar/ ~/.zshrc > /dev/null; then
-  echo 'export PATH=$(brew --prefix gnu-tar)/libexec/gnubin:$PATH' >> ~/.zshrc
-  echo 'export MANPATH=$(brew --prefix gnu-tar)/libexec/gnuman:$MANPATH' >> ~/.zshrc
-fi
-if ! grep /grep/ ~/.zshrc > /dev/null; then
-  echo 'export PATH=$(brew --prefix grep)/libexec/gnubin:$PATH' >> ~/.zshrc
-  echo 'export MANPATH=$(brew --prefix grep)/libexec/gnuman:$MANPATH' >> ~/.zshrc
-fi
 
 # Vim
 brew install lua
