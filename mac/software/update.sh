@@ -100,4 +100,5 @@ mas install 418073146 # Snap
 mas install 1295203466 # Microsoft Remote Desktop
 mas install 549083868 # Display Menu
 mas install 1122008420 # Table Tool
+mas install 1176895641 # Spark
 mas upgrade
