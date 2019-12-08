@@ -90,7 +90,7 @@ ssh-tunnel-manager
 oracle-jdk
 nvm
 )
-brew tap caskroom/cask
+brew tap homebrew/cask
 brew cask install ${cask_apps[@]}
 brew cask upgrade ${cask_apps[@]}
 
