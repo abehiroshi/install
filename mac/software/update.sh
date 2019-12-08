@@ -59,6 +59,7 @@ graphviz
 libpng
 libtiff
 openssl
+nvm
 )
 brew install ${apps[@]}
 
@@ -88,7 +89,6 @@ thunderbird
 microsoft-office
 ssh-tunnel-manager
 oracle-jdk
-nvm
 )
 brew tap homebrew/cask
 brew cask install ${cask_apps[@]}
